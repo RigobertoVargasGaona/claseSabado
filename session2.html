@@ -6,7 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="config/css/styles.session2.css">
     <link rel="stylesheet" href="config/css/bootstrap.min.css">
+    <link rel="stylesheet" href="config/css/bootstrap-utilities.min.css">
     <link rel="stylesheet" href="config/css/font-awesome.min.css">
+  
 </head>
 <body>
     <header>
@@ -32,23 +34,127 @@
         </ul>
     </nav>
     <section>
-        <div>
-            <!--Carrusel-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner imagenes">
+                <div class="carousel-item active">
+                <img src="imagenes/prom1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="imagenes/prom2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div>
-            <article>
-                <h1>¿Quienes somos?</h1>
-                <p>Somos una tienda que ofrece preosuctos alimenticios</p>
-            </article>
-            <article>
-                <h1>¿Que ofrecemos?</h1>
-                <p>Oferecemos productos de<strong> calidad y a buen precio</strong></p>
-            </article>
+       
+    </section>
+    <section class="container mb-5">
+        <h2 class="text-center text-primary mb-4">Productos destacados</h2>
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                 <div class="card h-100" >
+                    <img src="imagenes/arroz.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Arroz Pinillar</h5>
+                        <p class="card-text">Arroz excelso de la mas alta calida al mejor precio</p>
+                        <div class="d-flex justify-content-between aling-items-center">
+                            <span class="text-success fw-bold">$12.500</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Anadir al carrito de compras</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                 <div class="card h-100" >
+                    <img src="imagenes/ACEITE.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceite de Oliva</h5>
+                        <p class="card-text">Arroz excelso de la mas alta calida al mejor precio</p>
+                        <div class="d-flex justify-content-between aling-items-center">
+                            <span class="text-success fw-bold">$50.600</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Anadir al carrito de compras</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                 <div class="card h-100" >
+                    <img src="imagenes/leche.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Leche Entera</h5>
+                        <p class="card-text">Arroz excelso de la mas alta calida al mejor precio</p>
+                        <div class="d-flex justify-content-between aling-items-center">
+                            <span class="text-success fw-bold">$12.500</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Anadir al carrito de compras</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                 <div class="card h-100" >
+                    <img src="imagenes/arroz.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Arroz Pinillar</h5>
+                        <p class="card-text">Arroz excelso de la mas alta calida al mejor precio</p>
+                        <div class="d-flex justify-content-between aling-items-center">
+                            <span class="text-success fw-bold">$12.500</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Anadir al carrito de compras</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+
+                <a href="" target="_blank" class="btn btn-outline-primary">Ver todos</a>
+            </div>
+
         </div>
     </section>
-    <footer>
-      <small>Desarrollado por Julios</small>
-    </footer>
-
+    <section>
+        <section class="p-4 bg-white rounded shadoww-sm seccion">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <article class="p-4 bg-white rounded shadow-sm articulo">
+                            <h2 class="text-primary titulo">Quienes somos?</h2>
+                            <p>Somos una tienda en linea compromentida con ofrecer los mejores producto alimenticios direnctamente a su hogar.</p>
+                            <p>Con mas de 10 años de experiencia en el mercado.</p>
+                            <img src="imagenes/equipo.jpg" alt="Equipo de trabajo" class="img-fluid rounded imagen">
+                        </article>
+                    </div>            
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <article class="p-4 bg-white rounded shadow-sm articulo">
+                            <h2 class="text-primary titulo">Que ofrecemos?</h2>
+                            <p>Ofrecemos productos de <strong>calidad garantizada.</strong> </p>
+                            <ul class="list-group">
+                                <li class="list-group-item"><i clas="fa fa-check-circle-o text-success"></i> Amplia variedad de productos</li>
+                                <li class="list-group-item">Envio rapido de productos</li>
+                                <li class="list-group-item">Atencion al cliente personalizada</li>
+                                <li class="list-group-item">Promociones semanales</li>
+                                <li class="list-group-item">Programa de fifelización</li>
+                            </ul>
+                            
+                            
+                        </article>
+                    </div>            
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="config/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
