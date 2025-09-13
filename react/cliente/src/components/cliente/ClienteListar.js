@@ -12,8 +12,8 @@ const ClienteListar=()=>{
                 <Col>
                     <h2>Lista de clientes</h2>
                 </Col>
-                <Col clasName="text=end">
-                    <button type="button" class="btn btn-primary">Agregar</button>
+                <Col clasName="text-end">
+                    <button type="button" className="btn btn-primary">Agregar</button>
 
                 </Col>
             </Row>
@@ -108,6 +108,21 @@ const ClienteListar=()=>{
                 </tbody>
 
             </Table>
+                    <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active">
+                        <a class="page-link" href="#" aria-current="page">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                    </nav>
               
     </Container>);
 }   
