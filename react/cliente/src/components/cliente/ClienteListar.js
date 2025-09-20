@@ -1,8 +1,8 @@
 
 import React from "react";
 
-import {Form, Button, Container, Alert, Spinner, Row, Col, Table } from 'react-bootstrap';
-
+import {Form, Button, Container, Alert, Spinner, Row, Col, Table,  } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const ClienteListar=()=>{
     return(
@@ -13,7 +13,7 @@ const ClienteListar=()=>{
                     <h2>Lista de clientes</h2>
                 </Col>
                 <Col clasName="text-end">
-                    <button type="button" className="btn btn-primary">Agregar</button>
+                    <Button as={ Link }  to ="/cliente/AgreagarCliente"  variant="primary" >Agregar</Button>
 
                 </Col>
             </Row>

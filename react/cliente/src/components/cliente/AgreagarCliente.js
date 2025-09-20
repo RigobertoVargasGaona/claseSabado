@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Alert, Card } from 'react-bootstrap';
 
-export const AgreagarCliente = () => {
+ const AgreagarCliente = () => {
     const [FormData, setData] = useState({
         NombreCliente: '',
         DocumentoCliente: '',
@@ -114,3 +114,4 @@ export const AgreagarCliente = () => {
         </Container>
     );
 };
+export default AgreagarCliente;
